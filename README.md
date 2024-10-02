@@ -9,8 +9,7 @@
 - ociコマンドがクライアントにインストールされており、初期設定が完了していること
 
 ## 構成図
-![network_diagram drawio](https://github.com/user-attachments/assets/1f589caf-7a9a-45fa-8ce5-92bbe5ddec56)
-
+![network_diagram drawio](https://github.com/user-attachments/assets/a724de30-147b-4114-8695-1a84254ca557)
 
 ## 使い方
 ### 構築方法
