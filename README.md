@@ -1,6 +1,6 @@
 # terraform_oke_Ampere_A1
 - OCIのFree TireでOKEクラスターを作成するためのterraformコード
-- 作業の大枠や事前準備は[こちら]()を参照
+- 作業の大枠や事前準備は[こちら](https://qiita.com/yamamuratkr/items/698266359386c7b16873)を参照
 
 ## 前提
 - OCIでアカウントを開設していること
@@ -9,8 +9,11 @@
 - ociコマンドがクライアントにインストールされており、初期設定が完了していること
 
 ## 構成図
+![network_diagram drawio](https://github.com/user-attachments/assets/1f589caf-7a9a-45fa-8ce5-92bbe5ddec56)
+
 
 ## 使い方
+### 構築方法
 - cloneしてフォルダに移動
 ```
 # git cloneする
@@ -38,3 +41,8 @@ terraform plan
 terraform apply (-auto-approveをつけるとyesの入力が不要になる)
 →エラーが発生しなかったら構築成功
 ```
+
+### 予約済みパブリックIP
+- terraformコードの中に予約済みパブリックIPを作成するコードがある
+- Loadbalancer等を作成する場合に、固定のパブリックIPが欲しい時に使える
+- パブリックIPを確認したい場合は、OCIコンソールの予約済みパブリックIPから確認できる
